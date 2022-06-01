@@ -26,7 +26,9 @@
         <module>mall-order</module>
         <module>mall-product</module>
         <module>mall-ware</module>
-        <module>renren-fast</module>
+        <module>renren-security</module>
+        <module>renren-generator</module>
+        <module>mall-common</module>
     </modules>
 
     <!--统一模块版本号-->
@@ -36,15 +38,18 @@
         <spring-boot.version>2.4.2</spring-boot.version>
         <spring-cloud.version>2020.0.1</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
+        <shiro.version>1.9.0</shiro.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <httpcore.version>4.4.15</httpcore.version>
         <mysql.version>8.0.17</mysql.version>
-        <commons-lang.version>2.6</commons-lang.version>
-        <hutool.version>4.1.1</hutool.version>
+        <commons-lang.version>3.8.1</commons-lang.version>
+        <hutool.version>5.7.22</hutool.version>
+        <hutool.core.version>5.1.2</hutool.core.version>
         <validation.version>2.2.4.RELEASE</validation.version>
+        <validation-api.version>2.0.2</validation-api.version>
         <druid.version>1.1.13</druid.version>
         <swagger.fox.version>3.0.0</swagger.fox.version>
-        <swagger.core.version>1.6.2</swagger.core.version>
+        <swagger.core.version>1.5.22</swagger.core.version>
         <lombok.version>1.18.14</lombok.version>
     </properties>
 
@@ -81,6 +86,41 @@
                 <version>${swagger.core.version}</version>
             </dependency>
 
+            <!--shiro-->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+
+            <!--mybatis-plus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!--hutool-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-core</artifactId>
+                <version>${hutool.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${validation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

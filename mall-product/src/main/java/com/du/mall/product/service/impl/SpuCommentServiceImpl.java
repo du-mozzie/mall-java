@@ -17,7 +17,7 @@ import com.du.mall.product.service.SpuCommentService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [商品评价]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:39]
+ * @Date : [2022-06-02 14:50:30]
  */
 @Service("spuCommentService")
 public class SpuCommentServiceImpl extends ServiceImpl<SpuCommentDao, SpuCommentEntity> implements SpuCommentService {

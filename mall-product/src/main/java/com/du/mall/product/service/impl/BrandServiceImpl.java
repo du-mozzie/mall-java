@@ -17,7 +17,7 @@ import com.du.mall.product.service.BrandService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [品牌]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:40]
+ * @Date : [2022-06-02 14:50:30]
  */
 @Service("brandService")
 public class BrandServiceImpl extends ServiceImpl<BrandDao, BrandEntity> implements BrandService {

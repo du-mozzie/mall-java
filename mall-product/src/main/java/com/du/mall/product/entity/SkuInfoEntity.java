@@ -13,7 +13,7 @@ import lombok.Data;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [sku信息]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:40]
+ * @Date : [2022-06-02 14:50:30]
  */
 @Data
 @TableName("pms_sku_info")

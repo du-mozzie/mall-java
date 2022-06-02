@@ -17,7 +17,7 @@ import com.du.mall.product.service.CategoryService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [商品三级分类]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:40]
+ * @Date : [2022-06-02 14:50:30]
  */
 @Service("categoryService")
 public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity> implements CategoryService {

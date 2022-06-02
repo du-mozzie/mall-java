@@ -17,7 +17,7 @@ import com.du.mall.product.service.SkuSaleAttrValueService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [sku销售属性&值]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:39]
+ * @Date : [2022-06-02 14:50:30]
  */
 @Service("skuSaleAttrValueService")
 public class SkuSaleAttrValueServiceImpl extends ServiceImpl<SkuSaleAttrValueDao, SkuSaleAttrValueEntity> implements SkuSaleAttrValueService {

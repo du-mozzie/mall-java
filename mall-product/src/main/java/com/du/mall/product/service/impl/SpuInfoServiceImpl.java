@@ -17,7 +17,7 @@ import com.du.mall.product.service.SpuInfoService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [spu信息]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:39]
+ * @Date : [2022-06-02 14:50:30]
  */
 @Service("spuInfoService")
 public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> implements SpuInfoService {

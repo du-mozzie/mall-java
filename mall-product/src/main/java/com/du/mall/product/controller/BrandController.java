@@ -3,7 +3,6 @@ package com.du.mall.product.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,7 @@ import com.du.common.utils.R;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [品牌]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:40]
+ * @Date : [2022-06-02 14:50:30]
  */
 @RestController
 @RequestMapping("product/brand")
@@ -34,7 +33,7 @@ public class BrandController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("product:brand:list")
+    // @RequiresPermissions("product:brand:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = brandService.queryPage(params);
 
@@ -46,7 +45,7 @@ public class BrandController {
      * 信息
      */
     @RequestMapping("/info/{brandId}")
-    @RequiresPermissions("product:brand:info")
+    // @RequiresPermissions("product:brand:info")
     public R info(@PathVariable("brandId") Long brandId){
 		BrandEntity brand = brandService.getById(brandId);
 
@@ -57,7 +56,7 @@ public class BrandController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("product:brand:save")
+    // @RequiresPermissions("product:brand:save")
     public R save(@RequestBody BrandEntity brand){
 		brandService.save(brand);
 
@@ -68,7 +67,7 @@ public class BrandController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("product:brand:update")
+    // @RequiresPermissions("product:brand:update")
     public R update(@RequestBody BrandEntity brand){
 		brandService.updateById(brand);
 
@@ -79,7 +78,7 @@ public class BrandController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("product:brand:delete")
+    // @RequiresPermissions("product:brand:delete")
     public R delete(@RequestBody Long[] brandIds){
 		brandService.removeByIds(Arrays.asList(brandIds));
 

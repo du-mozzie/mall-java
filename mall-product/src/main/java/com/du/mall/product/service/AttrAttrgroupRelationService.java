@@ -11,7 +11,7 @@ import java.util.Map;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [属性&属性分组关联]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:39]
+ * @Date : [2022-06-02 14:50:30]
  */
 public interface AttrAttrgroupRelationService extends IService<AttrAttrgroupRelationEntity> {
 

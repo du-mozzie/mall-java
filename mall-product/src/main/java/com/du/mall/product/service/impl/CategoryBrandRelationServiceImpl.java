@@ -17,7 +17,7 @@ import com.du.mall.product.service.CategoryBrandRelationService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [品牌分类关联]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:20:40]
+ * @Date : [2022-06-02 14:50:30]
  */
 @Service("categoryBrandRelationService")
 public class CategoryBrandRelationServiceImpl extends ServiceImpl<CategoryBrandRelationDao, CategoryBrandRelationEntity> implements CategoryBrandRelationService {

@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [订单操作历史记录]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:41:04]
+ * @Date : [2022-06-02 20:14:37]
  */
 @Mapper
 public interface OrderOperateHistoryDao extends BaseMapper<OrderOperateHistoryEntity> {

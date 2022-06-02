@@ -17,7 +17,7 @@ import com.du.mall.member.service.MemberCollectSubjectService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [会员收藏的专题活动]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:49:14]
+ * @Date : [2022-06-02 20:12:59]
  */
 @Service("memberCollectSubjectService")
 public class MemberCollectSubjectServiceImpl extends ServiceImpl<MemberCollectSubjectDao, MemberCollectSubjectEntity> implements MemberCollectSubjectService {

@@ -13,7 +13,7 @@ import lombok.Data;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [退款信息]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:41:04]
+ * @Date : [2022-06-02 20:14:37]
  */
 @Data
 @TableName("oms_refund_info")

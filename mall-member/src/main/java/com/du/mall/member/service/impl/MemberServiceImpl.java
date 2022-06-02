@@ -17,7 +17,7 @@ import com.du.mall.member.service.MemberService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [会员]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:49:14]
+ * @Date : [2022-06-02 20:12:59]
  */
 @Service("memberService")
 public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> implements MemberService {

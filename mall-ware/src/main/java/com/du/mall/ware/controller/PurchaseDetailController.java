@@ -3,7 +3,6 @@ package com.du.mall.ware.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,7 @@ import com.du.common.utils.R;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : []
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:51:20]
+ * @Date : [2022-06-02 20:16:08]
  */
 @RestController
 @RequestMapping("ware/purchasedetail")
@@ -34,7 +33,7 @@ public class PurchaseDetailController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("ware:purchasedetail:list")
+    // @RequiresPermissions("ware:purchasedetail:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = purchaseDetailService.queryPage(params);
 
@@ -46,7 +45,7 @@ public class PurchaseDetailController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("ware:purchasedetail:info")
+    // @RequiresPermissions("ware:purchasedetail:info")
     public R info(@PathVariable("id") Long id){
 		PurchaseDetailEntity purchaseDetail = purchaseDetailService.getById(id);
 
@@ -57,7 +56,7 @@ public class PurchaseDetailController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("ware:purchasedetail:save")
+    // @RequiresPermissions("ware:purchasedetail:save")
     public R save(@RequestBody PurchaseDetailEntity purchaseDetail){
 		purchaseDetailService.save(purchaseDetail);
 
@@ -68,7 +67,7 @@ public class PurchaseDetailController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("ware:purchasedetail:update")
+    // @RequiresPermissions("ware:purchasedetail:update")
     public R update(@RequestBody PurchaseDetailEntity purchaseDetail){
 		purchaseDetailService.updateById(purchaseDetail);
 
@@ -79,7 +78,7 @@ public class PurchaseDetailController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("ware:purchasedetail:delete")
+    // @RequiresPermissions("ware:purchasedetail:delete")
     public R delete(@RequestBody Long[] ids){
 		purchaseDetailService.removeByIds(Arrays.asList(ids));
 

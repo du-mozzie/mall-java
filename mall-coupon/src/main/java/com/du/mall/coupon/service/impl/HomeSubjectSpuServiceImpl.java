@@ -17,7 +17,7 @@ import com.du.mall.coupon.service.HomeSubjectSpuService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [专题商品]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:46:25]
+ * @Date : [2022-06-02 20:10:49]
  */
 @Service("homeSubjectSpuService")
 public class HomeSubjectSpuServiceImpl extends ServiceImpl<HomeSubjectSpuDao, HomeSubjectSpuEntity> implements HomeSubjectSpuService {

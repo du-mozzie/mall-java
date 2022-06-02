@@ -17,7 +17,7 @@ import com.du.mall.order.service.PaymentInfoService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [支付信息表]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:41:04]
+ * @Date : [2022-06-02 20:14:37]
  */
 @Service("paymentInfoService")
 public class PaymentInfoServiceImpl extends ServiceImpl<PaymentInfoDao, PaymentInfoEntity> implements PaymentInfoService {

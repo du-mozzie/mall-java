@@ -5,7 +5,6 @@ import com.du.common.utils.R;
 import com.du.mall.order.entity.OrderEntity;
 import com.du.mall.order.service.OrderService;
 import lombok.RequiredArgsConstructor;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -16,7 +15,7 @@ import java.util.Map;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [订单]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:41:04]
+ * @Date : [2022-06-02 20:14:37]
  */
 @RestController
 @RequestMapping("order/order")
@@ -29,7 +28,7 @@ public class OrderController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("order:order:list")
+    // @RequiresPermissions("order:order:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = orderService.queryPage(params);
 
@@ -41,7 +40,7 @@ public class OrderController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("order:order:info")
+    // @RequiresPermissions("order:order:info")
     public R info(@PathVariable("id") Long id){
 		OrderEntity order = orderService.getById(id);
 
@@ -52,7 +51,7 @@ public class OrderController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("order:order:save")
+    // @RequiresPermissions("order:order:save")
     public R save(@RequestBody OrderEntity order){
 		orderService.save(order);
 
@@ -63,7 +62,7 @@ public class OrderController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("order:order:update")
+    // @RequiresPermissions("order:order:update")
     public R update(@RequestBody OrderEntity order){
 		orderService.updateById(order);
 
@@ -74,7 +73,7 @@ public class OrderController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("order:order:delete")
+    // @RequiresPermissions("order:order:delete")
     public R delete(@RequestBody Long[] ids){
 		orderService.removeByIds(Arrays.asList(ids));
 

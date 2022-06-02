@@ -17,7 +17,7 @@ import com.du.mall.coupon.service.CouponSpuCategoryRelationService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [优惠券分类关联]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:46:25]
+ * @Date : [2022-06-02 20:10:49]
  */
 @Service("couponSpuCategoryRelationService")
 public class CouponSpuCategoryRelationServiceImpl extends ServiceImpl<CouponSpuCategoryRelationDao, CouponSpuCategoryRelationEntity> implements CouponSpuCategoryRelationService {

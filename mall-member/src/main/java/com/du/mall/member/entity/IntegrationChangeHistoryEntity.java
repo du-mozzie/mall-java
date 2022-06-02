@@ -12,7 +12,7 @@ import lombok.Data;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [积分变化历史记录]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:49:14]
+ * @Date : [2022-06-02 20:12:59]
  */
 @Data
 @TableName("ums_integration_change_history")

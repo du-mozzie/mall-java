@@ -17,7 +17,7 @@ import com.du.mall.order.service.OrderReturnReasonService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [退货原因]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:41:04]
+ * @Date : [2022-06-02 20:14:37]
  */
 @Service("orderReturnReasonService")
 public class OrderReturnReasonServiceImpl extends ServiceImpl<OrderReturnReasonDao, OrderReturnReasonEntity> implements OrderReturnReasonService {

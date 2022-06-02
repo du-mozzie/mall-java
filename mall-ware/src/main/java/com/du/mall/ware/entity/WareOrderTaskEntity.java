@@ -12,7 +12,7 @@ import lombok.Data;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [库存工作单]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:51:20]
+ * @Date : [2022-06-02 20:16:08]
  */
 @Data
 @TableName("wms_ware_order_task")

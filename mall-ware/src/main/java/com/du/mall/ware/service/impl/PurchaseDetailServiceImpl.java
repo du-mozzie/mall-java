@@ -17,7 +17,7 @@ import com.du.mall.ware.service.PurchaseDetailService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : []
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:51:20]
+ * @Date : [2022-06-02 20:16:08]
  */
 @Service("purchaseDetailService")
 public class PurchaseDetailServiceImpl extends ServiceImpl<PurchaseDetailDao, PurchaseDetailEntity> implements PurchaseDetailService {

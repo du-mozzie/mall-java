@@ -17,7 +17,7 @@ import com.du.mall.ware.service.WareSkuService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [商品库存]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:51:20]
+ * @Date : [2022-06-02 20:16:08]
  */
 @Service("wareSkuService")
 public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> implements WareSkuService {

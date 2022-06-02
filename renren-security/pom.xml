@@ -21,7 +21,6 @@
 		<module>renren-dynamic-datasource</module>
         <module>renren-admin</module>
         <module>renren-api</module>
-        <module>renren-generator</module>
     </modules>
 
     <properties>

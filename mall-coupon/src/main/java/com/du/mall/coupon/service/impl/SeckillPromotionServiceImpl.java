@@ -17,7 +17,7 @@ import com.du.mall.coupon.service.SeckillPromotionService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [秒杀活动]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:46:25]
+ * @Date : [2022-06-02 20:10:49]
  */
 @Service("seckillPromotionService")
 public class SeckillPromotionServiceImpl extends ServiceImpl<SeckillPromotionDao, SeckillPromotionEntity> implements SeckillPromotionService {

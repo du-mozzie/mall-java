@@ -3,7 +3,6 @@ package com.du.mall.ware.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,7 @@ import com.du.common.utils.R;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [库存工作单]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:51:20]
+ * @Date : [2022-06-02 20:16:08]
  */
 @RestController
 @RequestMapping("ware/wareordertaskdetail")
@@ -34,7 +33,7 @@ public class WareOrderTaskDetailController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("ware:wareordertaskdetail:list")
+    // @RequiresPermissions("ware:wareordertaskdetail:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = wareOrderTaskDetailService.queryPage(params);
 
@@ -46,7 +45,7 @@ public class WareOrderTaskDetailController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("ware:wareordertaskdetail:info")
+    // @RequiresPermissions("ware:wareordertaskdetail:info")
     public R info(@PathVariable("id") Long id){
 		WareOrderTaskDetailEntity wareOrderTaskDetail = wareOrderTaskDetailService.getById(id);
 
@@ -57,7 +56,7 @@ public class WareOrderTaskDetailController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("ware:wareordertaskdetail:save")
+    // @RequiresPermissions("ware:wareordertaskdetail:save")
     public R save(@RequestBody WareOrderTaskDetailEntity wareOrderTaskDetail){
 		wareOrderTaskDetailService.save(wareOrderTaskDetail);
 
@@ -68,7 +67,7 @@ public class WareOrderTaskDetailController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("ware:wareordertaskdetail:update")
+    // @RequiresPermissions("ware:wareordertaskdetail:update")
     public R update(@RequestBody WareOrderTaskDetailEntity wareOrderTaskDetail){
 		wareOrderTaskDetailService.updateById(wareOrderTaskDetail);
 
@@ -79,7 +78,7 @@ public class WareOrderTaskDetailController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("ware:wareordertaskdetail:delete")
+    // @RequiresPermissions("ware:wareordertaskdetail:delete")
     public R delete(@RequestBody Long[] ids){
 		wareOrderTaskDetailService.removeByIds(Arrays.asList(ids));
 

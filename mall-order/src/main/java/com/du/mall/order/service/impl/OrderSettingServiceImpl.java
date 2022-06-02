@@ -17,7 +17,7 @@ import com.du.mall.order.service.OrderSettingService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [订单配置信息]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:41:04]
+ * @Date : [2022-06-02 20:14:37]
  */
 @Service("orderSettingService")
 public class OrderSettingServiceImpl extends ServiceImpl<OrderSettingDao, OrderSettingEntity> implements OrderSettingService {

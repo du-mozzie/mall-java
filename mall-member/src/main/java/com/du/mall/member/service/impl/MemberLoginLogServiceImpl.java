@@ -17,7 +17,7 @@ import com.du.mall.member.service.MemberLoginLogService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [会员登录记录]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:49:14]
+ * @Date : [2022-06-02 20:12:59]
  */
 @Service("memberLoginLogService")
 public class MemberLoginLogServiceImpl extends ServiceImpl<MemberLoginLogDao, MemberLoginLogEntity> implements MemberLoginLogService {

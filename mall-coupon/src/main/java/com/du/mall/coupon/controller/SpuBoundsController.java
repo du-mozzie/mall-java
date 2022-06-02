@@ -3,7 +3,6 @@ package com.du.mall.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,7 @@ import com.du.common.utils.R;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [商品spu积分设置]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:46:25]
+ * @Date : [2022-06-02 20:10:49]
  */
 @RestController
 @RequestMapping("coupon/spubounds")
@@ -34,7 +33,7 @@ public class SpuBoundsController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("coupon:spubounds:list")
+    // @RequiresPermissions("coupon:spubounds:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = spuBoundsService.queryPage(params);
 
@@ -46,7 +45,7 @@ public class SpuBoundsController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("coupon:spubounds:info")
+    // @RequiresPermissions("coupon:spubounds:info")
     public R info(@PathVariable("id") Long id){
 		SpuBoundsEntity spuBounds = spuBoundsService.getById(id);
 
@@ -57,7 +56,7 @@ public class SpuBoundsController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("coupon:spubounds:save")
+    // @RequiresPermissions("coupon:spubounds:save")
     public R save(@RequestBody SpuBoundsEntity spuBounds){
 		spuBoundsService.save(spuBounds);
 
@@ -68,7 +67,7 @@ public class SpuBoundsController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("coupon:spubounds:update")
+    // @RequiresPermissions("coupon:spubounds:update")
     public R update(@RequestBody SpuBoundsEntity spuBounds){
 		spuBoundsService.updateById(spuBounds);
 
@@ -79,7 +78,7 @@ public class SpuBoundsController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("coupon:spubounds:delete")
+    // @RequiresPermissions("coupon:spubounds:delete")
     public R delete(@RequestBody Long[] ids){
 		spuBoundsService.removeByIds(Arrays.asList(ids));
 

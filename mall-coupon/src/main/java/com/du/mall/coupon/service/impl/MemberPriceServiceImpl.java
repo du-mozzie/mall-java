@@ -17,7 +17,7 @@ import com.du.mall.coupon.service.MemberPriceService;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [商品会员价格]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:46:25]
+ * @Date : [2022-06-02 20:10:49]
  */
 @Service("memberPriceService")
 public class MemberPriceServiceImpl extends ServiceImpl<MemberPriceDao, MemberPriceEntity> implements MemberPriceService {

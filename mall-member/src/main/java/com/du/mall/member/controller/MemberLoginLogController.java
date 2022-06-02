@@ -3,7 +3,6 @@ package com.du.mall.member.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,7 @@ import com.du.common.utils.R;
  * @Author : Du YingJie (2548425238@qq.com)
  * @Description : [会员登录记录]
  * @Version : [v1.1]
- * @Date : [2022-06-02 00:49:14]
+ * @Date : [2022-06-02 20:12:59]
  */
 @RestController
 @RequestMapping("member/memberloginlog")
@@ -34,7 +33,7 @@ public class MemberLoginLogController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("member:memberloginlog:list")
+    // @RequiresPermissions("member:memberloginlog:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = memberLoginLogService.queryPage(params);
 
@@ -46,7 +45,7 @@ public class MemberLoginLogController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("member:memberloginlog:info")
+    // @RequiresPermissions("member:memberloginlog:info")
     public R info(@PathVariable("id") Long id){
 		MemberLoginLogEntity memberLoginLog = memberLoginLogService.getById(id);
 
@@ -57,7 +56,7 @@ public class MemberLoginLogController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("member:memberloginlog:save")
+    // @RequiresPermissions("member:memberloginlog:save")
     public R save(@RequestBody MemberLoginLogEntity memberLoginLog){
 		memberLoginLogService.save(memberLoginLog);
 
@@ -68,7 +67,7 @@ public class MemberLoginLogController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("member:memberloginlog:update")
+    // @RequiresPermissions("member:memberloginlog:update")
     public R update(@RequestBody MemberLoginLogEntity memberLoginLog){
 		memberLoginLogService.updateById(memberLoginLog);
 
@@ -79,7 +78,7 @@ public class MemberLoginLogController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("member:memberloginlog:delete")
+    // @RequiresPermissions("member:memberloginlog:delete")
     public R delete(@RequestBody Long[] ids){
 		memberLoginLogService.removeByIds(Arrays.asList(ids));
 

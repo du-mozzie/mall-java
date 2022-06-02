@@ -3,3 +3,9 @@ server:
 spring:
   profiles:
     active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.10.66:8848
+  application:
+    name: mall-coupon

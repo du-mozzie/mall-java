@@ -3,12 +3,14 @@ package com.du.mall.member.controller;
 import com.du.common.utils.PageUtils;
 import com.du.common.utils.R;
 import com.du.mall.member.entity.MemberEntity;
+import com.du.mall.member.feign.CouponFeignService;
 import com.du.mall.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  *
@@ -23,6 +25,21 @@ import java.util.Map;
 public class MemberController {
 
     private final MemberService memberService;
+
+    private final CouponFeignService couponFeignService;
+
+    @RequestMapping("coupons")
+    public R testFeign(){
+        MemberEntity entity = new MemberEntity();
+        entity.setNickname("张三");
+
+        R memberCoupon = couponFeignService.memberCoupon();
+
+        return Objects.requireNonNull(R.ok()
+                .put("member", entity))
+                .put("coupons",memberCoupon.get("coupons")
+                );
+    }
 
     /**
      * 列表

@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -23,6 +24,13 @@ import java.util.Map;
 public class CouponController {
 
     private final CouponService couponService;
+
+    @GetMapping("/member/list")
+    public R memberCoupon(){
+        CouponEntity entity = new CouponEntity();
+        entity.setCouponName("满100减10");
+        return R.ok().put("coupons", Collections.singletonList(entity));
+    }
 
     /**
      * 列表

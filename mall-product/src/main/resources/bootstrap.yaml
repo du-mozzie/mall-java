@@ -8,4 +8,3 @@ spring:
       server-addr: 192.168.10.66:8848
       config:
         file-extension: yaml
-        enabled: true

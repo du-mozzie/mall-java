@@ -6,6 +6,8 @@ spring:
   cloud:
     nacos:
       server-addr: 192.168.10.66:8848
+      discovery:
+        namespace: 3ff360a5-06cc-4a30-b79f-a8f2aff760e4
       config:
         namespace: 6c9bf4ce-c177-46fb-bd26-96898f5602cc
         group: dev

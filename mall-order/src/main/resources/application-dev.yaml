@@ -19,9 +19,7 @@
 #      test-on-return: false
 #      stat-view-servlet:
 #        enabled: true
-#        url-pattern: /druid/order/*
-#        login-username: admin
-#        login-password: admin
+#        url-pattern: /druid/*
 #      filter:
 #        stat:
 #          log-slow-sql: true

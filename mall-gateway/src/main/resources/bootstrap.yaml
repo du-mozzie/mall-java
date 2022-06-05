@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: mall-gateway
+  cloud:
+    nacos:
+      server-addr: 192.168.10.66:8848
+      discovery:
+        namespace: 3ff360a5-06cc-4a30-b79f-a8f2aff760e4
+      config:
+        group: dev
+        namespace: 53a8909b-f360-4da1-b2ac-4fa7dc2cccc4
+        file-extension: yaml

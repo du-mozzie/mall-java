@@ -16,16 +16,39 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-
+        <!--nacos服务注册-->
         <dependency>
-            <groupId>com.du.mall</groupId>
-            <artifactId>mall-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <!--&lt;!&ndash;不使用Ribbon 进行客户端负载均衡&ndash;&gt;-->
+            <!--<exclusions>-->
+            <!--    <exclusion>-->
+            <!--        <groupId>org.springframework.cloud</groupId>-->
+            <!--        <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
+            <!--    </exclusion>-->
+            <!--</exclusions>-->
+        </dependency>
+
+        <!--nacos配置中心-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--springcloud高版本默认不加载bootstrap.yml文件，需要在pom里加上依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <!--cloud 2020以上删除了ribbon-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-loadbalancer</artifactId>
+            <version>3.0.0</version>
         </dependency>
 
         <dependency>

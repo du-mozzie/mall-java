@@ -4,9 +4,11 @@ import com.aliyun.oss.OSS;
 import com.aliyun.oss.common.utils.BinaryUtil;
 import com.aliyun.oss.model.MatchMode;
 import com.aliyun.oss.model.PolicyConditions;
+import com.du.common.utils.R;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
@@ -20,7 +22,8 @@ import java.util.Map;
  * @Version : [v1.1]
  * @Date : [2022/6/5 22:51]
  */
-@RestController("/oss")
+@RestController
+@RequestMapping("/oss")
 @RequiredArgsConstructor
 public class OssController {
 
@@ -35,7 +38,7 @@ public class OssController {
     private String accessid;
 
     @GetMapping("/policy")
-    public Map<String, String> policy() {
+    public R policy() {
 
         // 填写Host地址，格式为https://bucketname.endpoint。
         String host = "https://" + bucket + "." + endpoint;
@@ -68,7 +71,7 @@ public class OssController {
             // Assert.fail(e.getMessage());
             System.out.println(e.getMessage());
         }
-        return respMap;
+        return R.ok().put("data", respMap);
     }
 
 }

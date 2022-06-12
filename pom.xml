@@ -41,6 +41,7 @@
         <spring-boot.version>2.4.2</spring-boot.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <httpcore.version>4.4.15</httpcore.version>
+        <hibernate.validator>6.0.17.Final</hibernate.validator>
         <mysql.version>8.0.17</mysql.version>
         <druid.version>1.2.9</druid.version>
         <commons-lang.version>3.8.1</commons-lang.version>
@@ -126,6 +127,7 @@
                 <artifactId>hutool-core</artifactId>
                 <version>${hutool.core.version}</version>
             </dependency>
+
             <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -137,6 +139,22 @@
                 <artifactId>jakarta.validation-api</artifactId>
                 <version>${validation-api.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.logging</groupId>
+                <artifactId>jboss-logging</artifactId>
+                <version>${jboss-logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml</groupId>
+                <artifactId>classmate</artifactId>
+                <version>${classmate.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>

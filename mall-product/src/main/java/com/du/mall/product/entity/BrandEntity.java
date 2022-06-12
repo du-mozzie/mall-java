@@ -3,11 +3,9 @@ package com.du.mall.product.entity;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.du.common.validator.group.AddGroup;
-import com.du.common.validator.group.UpdateGroup;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 import java.io.Serializable;
 
@@ -26,7 +24,7 @@ public class BrandEntity implements Serializable {
      * 品牌id
      */
     @TableId
-    @NotNull(message = "修改必须指定id", groups = {UpdateGroup.class})
+    // @NotNll(message = "修改必须指定id", groups = {UpdateGroup.class})
     @Null(message = "新增不能指定id", groups = {AddGroup.class})
     private Long brandId;
     /**

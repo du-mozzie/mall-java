@@ -30,6 +30,6 @@ public @interface ListValue {
 
     Class<? extends Payload>[] payload() default {};
 
-    int[] vales() default {};
+    int[] vals() default {};
 
 }

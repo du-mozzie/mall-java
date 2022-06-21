@@ -18,7 +18,7 @@ public class ListValueConstraintValidatorForInteger implements ConstraintValidat
 
     @Override
     public void initialize(ListValue constraintAnnotation) {
-        int[] vales = constraintAnnotation.vales();
+        int[] vales = constraintAnnotation.vals();
         for (int vale : vales) {
             listValue.add(vale);
         }

@@ -26,6 +26,4 @@ public class MallCorsConfiguration {
         source.registerCorsConfiguration("/**",corsConfiguration);
         return new CorsWebFilter(source);
     }
-
-
 }
